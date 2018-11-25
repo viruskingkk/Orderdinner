@@ -1,0 +1,587 @@
+2018/07/27 09:50:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\xampp\htdocs\dinner\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\dinner\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\dinner\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\dinner\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\dinner\yii\framework\db\ar\CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\dinner\yii\framework\db\ar\CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(95): CActiveRecord->findAll('t.status=:statu...', Array)
+#8 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/dinner/
+---
+2018/07/27 11:29:10 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/27 11:30:14 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/27 11:30:24 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): ShopsController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): ShopsController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): ShopsController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): ShopsController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=shops/form
+in C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php (117)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/27 11:32:38 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/27 11:33:08 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/27 11:51:23 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/27 12:47:39 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/28 02:39:20 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/28 04:07:39 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/28 04:08:19 [error] [php] Undefined variable: model (C:\xampp\htdocs\dinner\protected\controllers\AnnouncementController.php:96)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): AnnouncementController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): AnnouncementController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): AnnouncementController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): AnnouncementController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=announcement/form
+in C:\xampp\htdocs\dinner\protected\controllers\AnnouncementController.php (96)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/28 04:54:25 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:120)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MenusController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MenusController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MenusController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MenusController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=menus/form
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (120)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/28 06:00:31 [error] [php] Undefined variable: _action (C:\xampp\htdocs\dinner\protected\views\members\recharge.php:42)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(869): MembersController->renderFile()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(782): MembersController->renderPartial()
+#2 C:\xampp\htdocs\dinner\protected\controllers\MembersController.php(153): MembersController->render()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): MembersController->actionRecharge()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): MembersController->runAction()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): MembersController->filterAccessControl()
+#9 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): MembersController->runActionWithFilters()
+#12 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): MembersController->run()
+#13 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=members/recharge&id=1
+in C:\xampp\htdocs\dinner\protected\views\members\recharge.php (42)
+in C:\xampp\htdocs\dinner\protected\controllers\MembersController.php (153)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/28 06:00:41 [error] [php] Undefined variable: data (C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php:117)
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): ShopsController->runAction()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): ShopsController->filterAccessControl()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): ShopsController->runActionWithFilters()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): ShopsController->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\dinner\index.php(13): CWebApplication->run()
+REQUEST_URI=/dinner/index.php?r=shops/form
+in C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php (117)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/28 06:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '创建失败' in C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php:58
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): ShopsController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shops/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=shops/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=shops/form
+---
+2018/07/28 07:06:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '請上傳要導入的菜單檔' in C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php:269
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): ShopsController->actionDoImport()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('doImport')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shops/doImport')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=shops/doImport
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=shops/importMenu&id=1
+---
+2018/07/28 07:08:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'param error' in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php:57
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): MenusController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('menus/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=menus/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=menus/form
+---
+2018/07/28 07:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '親！您的帳戶餘額不足，不能下單哦，到前臺妹子交錢吧！' in C:\xampp\htdocs\dinner\protected\controllers\SiteController.php:216
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionConfirmOrder()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(75): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsOnTime(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(51): CFilterChain->run()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsCartEmpty(Object(CFilterChain))
+#8 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(24): CFilterChain->run()
+#10 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckLoginControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('confirmorder')
+#15 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/confirmord...')
+#16 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/dinner/index.php?r=site/confirmorder
+HTTP_REFERER=http://192.168.8.14/dinner/index.php?r=site/lookcart
+---
+2018/07/28 07:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '親！您的帳戶餘額不足，不能下單哦，到前臺妹子交錢吧！' in C:\xampp\htdocs\dinner\protected\controllers\SiteController.php:216
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionConfirmOrder()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(75): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsOnTime(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(51): CFilterChain->run()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsCartEmpty(Object(CFilterChain))
+#8 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(24): CFilterChain->run()
+#10 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckLoginControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('confirmorder')
+#15 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/confirmord...')
+#16 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/dinner/index.php?r=site/confirmorder
+HTTP_REFERER=http://192.168.8.14/dinner/index.php?r=site/lookcart
+---
+2018/07/28 07:09:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '親！您的帳戶餘額不足，不能下單哦，到前臺妹子交錢吧！' in C:\xampp\htdocs\dinner\protected\controllers\SiteController.php:216
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionConfirmOrder()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(75): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsOnTime(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(51): CFilterChain->run()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsCartEmpty(Object(CFilterChain))
+#8 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(24): CFilterChain->run()
+#10 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckLoginControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('confirmorder')
+#15 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/confirmord...')
+#16 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/dinner/index.php?r=site/confirmorder
+HTTP_REFERER=http://192.168.8.14/dinner/index.php?r=site/lookcart
+---
+2018/07/28 07:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '親！您的帳戶餘額不足，不能下單哦，到前臺妹子交錢吧！' in C:\xampp\htdocs\dinner\protected\controllers\SiteController.php:216
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionConfirmOrder()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(75): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsOnTime(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(51): CFilterChain->run()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsCartEmpty(Object(CFilterChain))
+#8 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(24): CFilterChain->run()
+#10 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckLoginControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('confirmorder')
+#15 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/confirmord...')
+#16 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/dinner/index.php?r=site/confirmorder
+HTTP_REFERER=http://192.168.8.14/dinner/index.php?r=site/lookcart
+---
+2018/07/28 07:27:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '親！您的帳戶餘額不足，不能下單哦，到前臺妹子交錢吧！' in C:\xampp\htdocs\dinner\protected\controllers\SiteController.php:216
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionConfirmOrder()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(75): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsOnTime(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(51): CFilterChain->run()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsCartEmpty(Object(CFilterChain))
+#8 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(24): CFilterChain->run()
+#10 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckLoginControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('confirmorder')
+#15 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/confirmord...')
+#16 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/dinner/index.php?r=site/confirmorder
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=site/lookcart
+---
+2018/07/28 10:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '親！您的帳戶餘額不足，不能下單哦，到前台女神處交錢吧！' in C:\xampp\htdocs\dinner\protected\controllers\SiteController.php:216
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionConfirmOrder()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(75): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsOnTime(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(51): CFilterChain->run()
+#7 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsCartEmpty(Object(CFilterChain))
+#8 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\dinner\protected\controllers\SiteController.php(24): CFilterChain->run()
+#10 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckLoginControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('confirmorder')
+#15 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/confirmord...')
+#16 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/dinner/index.php?r=site/confirmorder
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=site/lookcart
+---
+2018/07/28 10:25:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '創建失敗' in C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php:58
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): ShopsController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shops/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=shops/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=shops/form
+---
+2018/07/28 10:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '創建失敗' in C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php:58
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): ShopsController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shops/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=shops/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=shops/form
+---
+2018/07/28 10:25:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '創建失敗' in C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php:58
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): ShopsController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shops/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=shops/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=shops/form
+---
+2018/07/28 10:27:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '創建失敗' in C:\xampp\htdocs\dinner\protected\controllers\ShopsController.php:58
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): ShopsController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shops/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=shops/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=shops/form
+---
+2018/07/29 04:57:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '創建失敗' in C:\xampp\htdocs\dinner\protected\controllers\FoodSortController.php:62
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): FoodSortController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('foodsort/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=foodsort/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=foodsort/form
+---
+2018/07/29 04:57:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '創建失敗' in C:\xampp\htdocs\dinner\protected\controllers\FoodSortController.php:62
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): FoodSortController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('foodsort/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=foodsort/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=foodsort/form
+---
+2018/07/29 05:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '創建失敗' in C:\xampp\htdocs\dinner\protected\controllers\FoodSortController.php:62
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\actions\CInlineAction.php(49): FoodSortController->actionCreate()
+#1 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#10 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('foodsort/create')
+#11 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/dinner/index.php?r=foodsort/create
+HTTP_REFERER=http://127.0.0.1/dinner/index.php?r=foodsort/form
+---
+2018/07/29 05:31:29 [warning] [application] Failed to set unsafe attribute "sort_id" of "Menus".
+in C:\xampp\htdocs\dinner\protected\controllers\MenusController.php (88)
+in C:\xampp\htdocs\dinner\index.php (13)
+2018/07/30 08:56:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '不在訂餐時間內' in C:\xampp\htdocs\dinner\protected\controllers\SiteController.php:73
+Stack trace:
+#0 C:\xampp\htdocs\dinner\yii\framework\web\filters\CInlineFilter.php(58): SiteController->filtercheckIsOnTime(Object(CFilterChain))
+#1 C:\xampp\htdocs\dinner\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(291): CFilterChain->run()
+#3 C:\xampp\htdocs\dinner\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(282): CController->run('lookmenu')
+#5 C:\xampp\htdocs\dinner\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/lookmenu')
+#6 C:\xampp\htdocs\dinner\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\dinner\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/dinner/index.php?r=site/lookmenu&shop_id=3
+HTTP_REFERER=http://192.168.80.39/dinner/index.php?r=site/index
+---
